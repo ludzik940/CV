@@ -26,7 +26,6 @@ header {
 .menuContainer ul > li {
     flex-basis: 20%;
     text-align: center;
-    font-family: 'Oswald', sans-serif;
 }
 
 .circle {
@@ -71,16 +70,33 @@ main {
 
 #doZmiany, #welcomeTxt {
     text-align: center;
-    font-family: 'Oswald', sans-serif;
 }
 
 #doZmiany h2, #welcomeTxt h2{
    font-size: 48px;
-   text-decoration: underline;
-   text-shadow: 0 0 2px lightskyblue;
+   text-shadow: 0 0 5px rgb(62, 83,111);
 }
 
 
+#aboutTxt {
+    position: relative;
+    width: 80%;
+    left: 10%;
+}
+
+.tab_animation::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+.tab_animation:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
 
 /* ? CONTACT! */
 
