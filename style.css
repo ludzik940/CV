@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+
 body {
     margin: 0 auto 0;
     height: 100vh;
@@ -10,16 +13,32 @@ header {
     background-size: cover;
 }
 
+
+.menuContainer ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+   margin: 0;
+}
+
+.menuContainer ul > li {
+    flex-basis: 20%;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
 .circle {
     position: absolute;
-    left: 40%;
-    top: 22vh;
+    top: -125px;
     width: 250px;
     height: 250px;
     border-radius: 50%;
     -webkit-box-shadow: 0px 0px 34px 2px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 34px 2px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 34px 2px rgba(0,0,0,0.75);
+    background: url('man.png') no-repeat;
+    background-size: cover;
 }
 
 main {
@@ -34,7 +53,7 @@ main {
 }
 
 main p {
-    margin-top: 150px !important;
+    margin-top: 90px !important;
     margin: 25px;
     padding: 25px;
     text-align: center;
@@ -48,12 +67,56 @@ main p {
     padding: 10px;
 }
 
+.tab-content {
+    display: none;
+    margin-top: 75px;
+}
+
+#doZmiany, #welcomeTxt {
+    margin-top: 75px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+#doZmiany h2, #welcomeTxt h2{
+   font-size: 48px;
+   text-decoration: underline;
+   text-shadow: 0 0 2px lightskyblue;
+}
 
 
-@media only screen and (max-width: 600px) {
+#contactTxt {
+    text-align: center;
+}
+
+
+
+/* !------TECHNOLOGIE------- */
+
+.technologyContainer {
+    margin-top: 100px;
+    display: flex;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.technologyContainer > div {
+    flex-basis: 25%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.technologyIcon {
+    font-size: 64px;
+}
+
+@media only screen and (max-width: 768px) {
      
     header {
         height: 55vh;
+    }
+    .menuContainer {
+        display: none;
     }
     main {
         top: 20vh;
@@ -69,4 +132,16 @@ main p {
         top: 14vh;
     }
 
-  }
+    .tab-content { 
+        display: block;
+    }
+
+    .technologyContainer {
+        flex-direction: column;
+    }
+    .technologyContainer > div {
+        margin-bottom: 25px;
+    }
+}
+
+
