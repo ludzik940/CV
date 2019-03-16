@@ -10,7 +10,7 @@ body {
 
 header {
     height: 45vh;
-    background: url('bgheader.jpeg') 0px -250px no-repeat;
+    background: url('bgheaderResized.jpeg') 0px -250px no-repeat;
     background-size: cover;
 }
 
