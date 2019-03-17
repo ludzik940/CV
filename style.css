@@ -37,7 +37,7 @@ header {
     -webkit-box-shadow: 0px 0px 34px 2px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 34px 2px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 34px 2px rgba(0,0,0,0.75);
-    background: url('man.png') no-repeat;
+    background: url('me.jpg') no-repeat;
     background-size: cover;
 }
 .welcome { 
@@ -95,7 +95,7 @@ main {
 
 .tab_animation:hover::after {
     width: 100%;
-    //transition: width .3s;
+    transition: width 0.7s;
 }
 
 /* ? CONTACT! */
