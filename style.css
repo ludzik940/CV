@@ -164,7 +164,13 @@ main {
     }
     .menuContainer > ul {
         flex-direction: column;
+    
     }
+
+    main {
+        top: 5vh;
+    }
+
 
     main p {
         margin-top: 75px !important;
