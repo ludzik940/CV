@@ -158,6 +158,8 @@ main {
 @media only screen and (max-width: 768px) {
      
     header {
+        background: url('bg_mobile.jpg') no-repeat;
+        background-size: cover;
         height: 100vh;
     }
     .menuContainer > ul {
