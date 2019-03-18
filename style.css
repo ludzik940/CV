@@ -166,10 +166,6 @@ main {
         flex-direction: column;
     }
 
-    main {
-        top: 20vh;
-    }
-
     main p {
         margin-top: 75px !important;
     }
