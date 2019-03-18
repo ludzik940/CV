@@ -13,4 +13,6 @@ document.getElementById('tabList').addEventListener('click', function(e){
       }
   });
 
-  
+  document.getElementById('menuArrow').addEventListener('click', function(){
+      document.querySelector('.menuContainer').style.display = "block";
+  });
