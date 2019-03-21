@@ -178,6 +178,12 @@ main {
         border: none !important;
     }
 
+    .projectThree {
+        background: url('projectImg/tripbuddys.png') no-repeat;
+        background-size: cover;
+        border: none !important;
+    }
+
     .opis > p{
         font-size: 22px;
         text-shadow: 2px 2px black;
