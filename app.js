@@ -10,9 +10,11 @@ document.getElementById('tabList').addEventListener('click', function(e){
         }
         document.getElementById(tabList[ti]+'Txt').style.display = 'block';
         document.getElementById('wlcScreen').style.display = "none";
+
       }
   });
 
   document.getElementById('menuArrow').addEventListener('click', function(){
       document.querySelector('.menuContainer').style.display = "block";
+      document.getElementById('menuArrow').style.display = "none";
   });

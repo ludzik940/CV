@@ -332,11 +332,32 @@ main {
     }
 
     .projectWrapper {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+        height: 100%;
     }
 
     .projectWrapper > div {
-        height: 10vh;
+        height: 100%;
+    }
+
+
+    .photoMobile {
+        position: relative;
+        width: 70%;
+        height: 300px;
+        left: 15%;
+        background: url('me.jpg') no-repeat;
+        background-size: cover;
+        margin-top: 50px;
+        border-radius: 5px;
+        -moz-box-shadow: 0 0 3px #000;
+    -webkit-box-shadow: 0 0 3px #000;
+    box-shadow: 0 0 3px #000;
+    }
+
+    .opis {
+        top: 2%;
     }
 }
 
@@ -363,8 +384,6 @@ main {
         transform: translate(0,0);
     }
 }
-
-
 
 
 
