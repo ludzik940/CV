@@ -9,7 +9,7 @@ document.getElementById('tabList').addEventListener('click', function(e){
           }
         }
         document.getElementById(tabList[ti]+'Txt').style.display = 'block';
-        document.getElementById('doZmiany').style.display = "none";
+        document.getElementById('wlcScreen').style.display = "none";
       }
   });
 

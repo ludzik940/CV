@@ -46,6 +46,10 @@ hr {
 }
 
 .circle {
+    vertical-align: middle;
+    text-align:center;
+    left:10%;
+    display:table-cell;
     position: relative;
     top: -125px;
     width: 200px;
@@ -77,8 +81,8 @@ main {
     text-align: center;
 }
 
-.media > img {
-    padding: 10px;
+.media > a {
+    text-decoration: none;
 }
 
 .media > a > img {
@@ -90,14 +94,14 @@ main {
     text-align: center;
 }
 
-#doZmiany, #welcomeTxt {
+#wlcScreen, #welcomeTxt {
     text-align: center;
 }
 
-#doZmiany h2, #welcomeTxt h2{
+#wlcScreen h2, #welcomeTxt h2{
    font-size: 48px;
    transition: color 60s linear;
-	background-image: -webkit-linear-gradient(92deg,#f35626,#fd32ca);
+	background-image: -webkit-linear-gradient(92deg,#4e00df,#b10a0a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-animation: hue 2s infinite linear;
@@ -157,31 +161,40 @@ main {
         width: 90%;
         position: relative;
         left: 5%;
-        height: 45vh;
+        height: 65vh;
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(2,1fr);
     }
     .projectWrapper > div {
-        border: 1px solid blue;
         margin: 5px;
     }
 
     .projectOne {
         background: url('projectImg/clicker.png')  no-repeat;
         background-size: cover;
-        border: none !important;
     }
     
     .projectTwo {
         background: url('projectImg/portfolio.png') no-repeat;
         background-size: cover;
-        border: none !important;
     }
 
     .projectThree {
         background: url('projectImg/tripbuddys.png') no-repeat;
         background-size: cover;
-        border: none !important;
+    }
+    .projectFour {
+        background: url('projectImg/eventCounter.png') no-repeat;
+        background-size: cover;
+    }
+    .projectFive {
+        font-size: 128px;
+        margin: 0;
+        padding: 0;
+    }
+    .projectFive > i {
+        margin: 0;
+        padding: 0;
     }
 
     .opis > p{
@@ -204,7 +217,7 @@ main {
         color: white;
         text-align: center;
         position: relative;
-        top: 50%;
+        top: 30%;
         background: rgba(0,0,0,0.6);
         visibility: hidden;
         margin: 0;
@@ -215,6 +228,7 @@ main {
         visibility: visible;
       }
 
+
       
 
 
@@ -222,23 +236,43 @@ main {
 
 .technologyContainer {
     margin-top: 75px;
-    display: flex;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
     margin-bottom: 60px;
+    position: relative;
+    left: 10%;
+    grid-gap: 5%;
 }
 
 .technologyContainer > div {
-    flex-basis: 25%;
-    flex-wrap: wrap;
     text-align: center;
+    border: 1px solid rgba(45, 41, 41, 0.735);
+    -moz-box-shadow: 0 0 3px #000;
+    -webkit-box-shadow: 0 0 3px #000;
+    box-shadow: 0 0 3px #000;
 }
-.technologyContainer > div:hover{
+
+.learnTech > h2, .knowTech > h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+.techCont .technologyIcon {
+    font-size: 64px;
+}
+.techCont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    margin-bottom: 25px;
+}
+
+
+.techCont > div:hover {
     transform: scale(1.3);
 }
 
-.technologyIcon {
-    font-size: 64px;
-}
+
 
 
 
@@ -268,7 +302,10 @@ main {
     }
 
     .technologyContainer {
-        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+    .techCont {
+        grid-template-columns: 1fr;
     }
     .technologyContainer > div {
         margin-bottom: 25px;
@@ -326,4 +363,10 @@ main {
         transform: translate(0,0);
     }
 }
+
+
+
+
+
+/* <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> */
 
