@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: 'VT323', monospace;
+}
+
+body {
+    background: rgb(240, 240, 219);
+}
+.wrapper {
+    width: 50%;
+}
+
+.span-underline {
+    text-decoration: underline red;
+}
+
+.title {
+    font-size: 1.985rem;
+    padding: 25px;
+}
+
+/* MENU */
+
+.menu {
+    display: flex;
+}
+.menu-item {
+    margin: 10px;
+}
+.menu_link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.545rem;
+}
+.menu-links {
+    display: flex;
+}
+
+.social-icons {
+    flex-basis: 60%;
+    text-align: right;
+}
+.social-icons > a {
+    text-decoration: none;
+}
+.social-icons > a > i {
+    font-size: 34px;
+    color:black;
+    padding-right: 10px;
+}
+
+/* Simple welcome bg */
+.terminal {
+    height: 350px;
+    background-image: url('img/simple_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Name */
+
+.name{
+    width: 100%;
+    text-align: center;
+    font-size: 1.985rem;
+    padding: 25px;
+}
+
+/* Bio */
+
+
+
+.bio > p {
+    width: 80%;
+    padding-top: 25px;
+}
+
+/* Work */
+
+.work-wrapper {
+    width: 80%;
+}
+
+.work-item {
+    width: 100%;
+}
+.work-desc {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.work-desc-span {
+    font-size: 1rem;
+}
+.technologies {
+    padding: 10px;
+    text-align: right;
+}
+
+.technologies > span {
+    padding: 5px;
+    font-size: 3rem;
+}
+
+/* Tech stack */
+
+.technology-lang, 
+.program-stack, 
+.system-stack{
+    width: 70%;
+    padding: 15px;
+    text-align: center;
+}
+
+.technology-lang > span, 
+.program-stack > span, 
+.system-stack > span {
+    padding: 10px;
+    margin-top: 15px;
+}
+
+
+/* Footer */
+footer {
+    width: 100%;
+    padding: 15px;
+    text-align: right;
+}
